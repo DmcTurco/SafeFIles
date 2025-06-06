@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-@include('company/inc/head')
+@include('employee/inc/head')
 
 <body class="">
     <div class="container position-sticky z-index-sticky top-0">
