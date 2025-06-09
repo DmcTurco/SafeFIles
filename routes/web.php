@@ -38,4 +38,6 @@ Route::prefix(MyApp::EMPLOYEE_SUBDIR)->middleware('auth:employee')->name('employ
 
     Route::get('/home', [Employee\EmployeeController::class, 'index'])->name('home');
     Route::resource('documents', Employee\DocumentsController::class);
+    Route::get('documents/{id}/download', [Employee\DocumentsController::class, 'download'])->name('documents.download');
+    Route::get('documents/{id}/preview', [Employee\DocumentsController::class, 'preview'])->name('documents.preview');
 });
